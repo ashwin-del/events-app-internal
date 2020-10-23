@@ -33,6 +33,10 @@ const firestore = new Firestore(
 //    ]
 //};
 
+app.get('/',(req,res) => {
+    res.json([]);
+});
+
 
 // health endpoint - returns an empty array
 app.get('/events', (req, res) => {
